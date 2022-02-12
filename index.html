@@ -10,7 +10,7 @@
 <body>
     <h1>Rekisteröitymislomake</h1>
     <p>Siirry kentästä toiseen tab-näppäimellä</p>
-
+    <form action="">
     <label>
         <span>Käyttäjä ID: </span>
         <input type="text" id="id" size="10">
@@ -47,19 +47,23 @@
     </label>     
     <label>
         <span>Sukupuoli: </span> 
-        <input name="x" type="radio" id="sPuoli">Mies 
-        <input name="x" type="radio" id="sPuoli">Nainen 
+        <input name="x" type="radio" id="mies">Mies 
+        <input name="x" type="radio" id="nainen">Nainen 
     </label>     
     <label>
         <span>Kieli: </span> 
-        <input name="x" type="radio" id="kieli">Suomi 
-        <input name="x" type="radio" id="kieli">Muu kuin suomi
+        <input name="x" type="radio" id="suomi">Suomi 
+        <input name="x" type="radio" id="muuSuomi">Muu kuin suomi
     </label> 
     <label class="textarea1">
         <span>Lisätietoja: </span> 
         <textarea name="lTietoja" id="lTietoja"></textarea>
     </label>
-    <button type="submit" style="margin-left: 130px; margin-top: 6px;">Läheta</button>
+    <button type="button" id="btn" onclick="Laheta()" style="margin-left: 130px; margin-top: 6px;">Läheta</button><br><br>
+    </form>
+
+    <p id="demo" style="margin-left: 48px;"></p>
+    
 
 
 
